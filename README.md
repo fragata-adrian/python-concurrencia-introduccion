@@ -7,7 +7,7 @@ En `dormilones.py` vimos tres ejemplos básicos de ejecución:
 - Y con threads, pero esperando a que terminen usando `join()`.
 
 Entonces responda:
-- ¿Por qué los segundos que pasaron son 2, 0 y 1 (aprox.) respectivamente?
+- ¿Por qué los segundos que se imprimen que pasaron son 2, 0 y 1 (aprox.) respectivamente?
 - ¿Cuántos hilos o threads hay en cada caso?
 - Los últimos dos ejemplos tienen la misma cantidad de threads cada uno, ¿cuál sería la diferencia entonces?
 - En el último ejemplo, ¿qué desventaja o desventajas le ve al uso del `join()`?
