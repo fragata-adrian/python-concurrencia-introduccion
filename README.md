@@ -38,7 +38,7 @@ Ahora corré el script: ¿por qué tarda lo que tarda?
 (Referencia [The First Rule of Fight Club (1999)](https://www.youtube.com/watch?v=dC1yHLp9bWA))
 
 Mirando el código de `contadorConcurrente.py`, pero sin ejecutarlo:
-- Al ejecutar a la función `cuenta()`, ¿cuántas veces se ejecuta el `for` que tiene adentro, y qué hace cada iteración del `for`?
+- Al ejecutar la función `cuenta()`, ¿cuántas veces se ejecuta el `for` que tiene adentro, y qué hace cada iteración del `for`?
 - ¿Es verdad que cada thread lanza una ejecución de la función `cuenta()`?
 - ¿Es verdad que se está esperando a que termine cada thread?
 - ¿Cúal te parece que es el valor que se imprime de `counter`?
