@@ -46,3 +46,23 @@ Mirando el código de `contadorConcurrente.py`, pero sin ejecutarlo:
 Ahora corré `contadorConcurrente.py`:
 - Correlo varias veces, ¿qué observás que pasa?
 - ¿Por qué está pasando eso que observás?
+
+
+# ¿Secuencial clásico, concurrente o paralelo?
+
+Para cada una de las siguiente situaciones, decidí si es secuencial clásico, concurrente o paralelo. Intentá justificar señalando las ideas esenciales de cada caso.
+
+- Cuál persona de un total de 50 corre más rápido una maratón.
+    - opción 1) Cada persona corre secuencialmente en la pista, y medimos cada tiempo.
+    - opción 2) Todas las personas corren en la misma pista, y la que llega primero listo.
+		- Preguntas: ¿hay algún recurso compartido? ¿genera problemas?
+    - opción 3) Cada persona corre en una pista distinta, todas al mismo tiempo.
+		- Pregunta: ¿hay un aumento de recursos respecto al anterior?
+    - Pregunta: ¿pros y contras de cada opción?
+
+- Competencia de triples en basquet: quién mete más en 10 intentos.
+    - opción 1) Cada persona secuencialmente realiza 10 intentos, y anotamos la cantidad de triples.
+    - opción 2) Todas las personas tiran los 10 intentos al mismo tiempo.
+		- Preguntas: ¿hay algún recurso compartido? ¿genera problemas?
+    - opción 3) Cada persona tira en un aro distinto, todas al mismo tiempo.
+    - Pregunta: ¿pros y contras de cada opción?
