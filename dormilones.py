@@ -15,6 +15,7 @@ contador = Contador()
 
 
 # ejemplo clásico secuencial
+
 contador.iniciar()
 
 dormir()
