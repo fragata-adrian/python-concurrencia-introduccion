@@ -57,6 +57,11 @@ Mirá el código y fijate de entender la sintaxis.
 
 ## Parte 2
 Ahora corré el script: ¿por qué tarda lo que tarda? 
+```
+  Tarda 1.5 segundos porque es el tiempo que se le pasa al momento de crear el thread en "args=[1.5]"
+  y se pasa por parametro en el metodo "dormir(secs)". Como los hilos se corren practicamente al mismo
+  tiempo, el tiempo transcurrido real es 1.5 y milesimas se segundos.
+```
 
 
 # Intercalación en concurrencia
@@ -69,13 +74,34 @@ Ahora corré el script: ¿por qué tarda lo que tarda?
 
 Mirando el código de `contadorConcurrente.py`, pero sin ejecutarlo:
 - Al ejecutar la función `cuenta()`, ¿cuántas veces se ejecuta el `for` que tiene adentro, y qué hace cada iteración del `for`?
+```
+  El for se ejecuta 500.000 veces (MAX_COUNT/THREADS = 1.000.000/2) y en cada iteracion incremente el
+  counter en 1.
+```
 - ¿Es verdad que cada thread lanza una ejecución de la función `cuenta()`?
+```
+  Si, es verdad. Cuando se los crea se les indica la funcion que deben realizar.
+```
 - ¿Es verdad que se está esperando a que termine cada thread?
+```
+  Si, el siguiente for asegura que por cada thread creado se espere su finalizacion.
+```
 - ¿Cúal te parece que es el valor que se imprime de `counter`?
+```
+  Deberia imprimir 1.000.000 pero como los hilos se lanzan a la par seguramente imprima menos.
+```
 
 Ahora corré `contadorConcurrente.py`:
 - Correlo varias veces, ¿qué observás que pasa?
+```
+  Lo que sucese es que da siempre un valor distinto.
+```
 - ¿Por qué está pasando eso que observás?
+```
+  Sucede porque los thread se inician practicamente al mismo tiempo, por lo tanto la variable "counter" 
+  llega a se modificada por ambos hilos a la vez lo que provoca que ambos cambien a counter al mismo 
+  valor.
+```
 
 
 # ¿Secuencial clásico, concurrente o paralelo?

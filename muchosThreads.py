@@ -23,9 +23,11 @@ for i in range(10):
     t = threading.Thread(target=dormir, args=[1.5])
     #lanzarlo
     t.start()
+    print("h",i+1)
     lista.append(t)
 
 for thread in lista:
+    print(thread)
     thread.join()
 
 cont.finalizar()

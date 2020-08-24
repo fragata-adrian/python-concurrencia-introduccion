@@ -23,9 +23,9 @@ def cuenta():
 
     for i in range(int(MAX_COUNT/THREADS)):
         #Opcion 1
-        mutex.acquire()
+        #mutex.acquire()
         counter += 1
-        mutex.release()
+        #mutex.release()
 
         #Opcion 2
         #mutex.acquire()
